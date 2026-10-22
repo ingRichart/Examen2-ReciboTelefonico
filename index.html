@@ -51,10 +51,13 @@
 
 
     </style>
+    <script>
+        alert('Saludos a mi hermoso mundo que me vio nacer');
+    </script>
 </head>
 <body>
 
-    <h1>Recibo Telefonico</h1>
+    <h1 style="color:yellow">Recibo Telefonico</h1>
     
     <form action="">
 
@@ -72,11 +75,17 @@
             <div id="seccion-plan">
                 <label for=""><b>Tipo de plan</b></label>
                 <br>
-                <input type="radio" name="" id=""><span>Solo telefono (200.00)</span>
+                <input type="radio" name="plan" id="plan" value="tel">
+                    <span>Solo telefono (200.00)</span>
                 <br>
-                <input type="radio" name="" id=""><span>Telefono e Internet (450.00)</span>
+                <input type="radio" name="plan" id="plan" value="internet">
+                    <span>Telefono e Internet (450.00)</span>
                 <br>
-                <input type="radio" name="" id=""><span>Telefono e Internet e TV (850.00)</span>
+                <input type="radio" name="plan" id="plan" value="tv">
+                    <span>Telefono e Internet e TV (850.00)</span>
+                <br>
+                <input type="radio" name="plan" id="plan" value="tv&internet">
+                    <span>Internet e TV (1050.00)</span>
             </div>
 
             <hr>
@@ -108,11 +117,16 @@
                 <input type="text" name="" id="" readonly>
             </div>
 
-            <button type="submit">Calcular</button>
+            <button type="submit" onclick="alert('Esto esta pagado')">Calcular</button>
 
         </div>
 
     </form>
     
+    <script>
+        console.log('Hola, desde la consola del desarrollador');
+    </script>
+
+    <script src="java.js"></script>
 </body>
 </html>

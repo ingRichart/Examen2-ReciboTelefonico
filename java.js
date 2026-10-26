@@ -22,7 +22,7 @@ var edad = 47; // Entero / integer
 var estatura = 1.80; // Decimal / Float
 
 /* la VARIABLE mayoriaDeEdad guarda el valor boolean */
-var mayoriaDeEdad = true;
+var mayoriaDeEdad;
 
 console.log(nombre);
 console.log(edad);
@@ -33,3 +33,17 @@ alert(nombre);
 nombre = prompt("Escribe el nombre nuevo:");
 alert("Mi nombre es: " + nombre + ". Y mi edad es de: " + edad + " años.");
 
+edad = prompt("Escribe una edad:");
+if (edad >= 18) {
+    mayoriaDeEdad = true;
+    alert("Tú eres mayor de edad");
+}
+
+if (nombre == "pedro") {
+    alert("Saludos al bro " + nombre);
+}
+
+estatura = prompt("Escribe tu estatura");
+if (estatura <= 1.50) {
+    alert("Eres un niño");
+}
